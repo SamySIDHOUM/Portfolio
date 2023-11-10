@@ -110,9 +110,62 @@ nav a:hover {
     text-align: justify;
     margin: 5%;
 }
+/* Section mes projets */
 
+#projets {
+    width: 80%;
+    margin: 5%;
+    padding: 2%;
+}
 
-/* Fotter */
+#carousel-container {
+    width: 100%;
+    display: flex;
+    background-color: rgb(248, 248, 248); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+    position: relative; 
+}
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+/* Style du bouton en savoir plus  */
+.en-savoir-plus-btn {
+    position: absolute; 
+    top: 75%; 
+    left: 25%; 
+    transform: translate(-80%, -20%); 
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.en-savoir-plus-btn .btn-text {
+    display: none;
+}
+
+.en-savoir-plus-btn:hover .btn-text {
+    display: inline;
+}
+
+.en-savoir-plus-btn i {
+    margin-right: 5px; 
+}
+
+.details {
+    display: none;
+}
+
+/* Footer */
 footer {
     width: 100%;
     text-align: center;
