@@ -1,19 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const enSavoirPlusBtn = document.querySelector('.en-savoir-plus-btn');
+  // Sélectionner tous les boutons "En savoir plus"
+  const enSavoirPlusBtns = document.querySelectorAll('.en-savoir-plus-btn');
 
-  const details = document.querySelector('.details');
+  // Ajout d'un gestionnaire d'événements pour chaque bouton "En savoir plus"
+  enSavoirPlusBtns.forEach(enSavoirPlusBtn => {
+    enSavoirPlusBtn.addEventListener('click', (event) => {
+      // Empêcher la propagation 
+      event.stopPropagation();
 
-  // Ajoutez un gestionnaire d'événements pour le clic sur le bouton
-  enSavoirPlusBtn.addEventListener('click', () => {
-  details.style.display = 'flex';
+      // Trouver les détails spécifiques liés à ce bouton
+      const details = enSavoirPlusBtn.parentElement.querySelector('.details');
+
+      // Afficher les détails
+      details.style.display = 'flex';
+    });
   });
 
-  // Ajouter un événement "click" pour fermer les détails
-  window.addEventListener("click", function(event) {
-    // Vérifier si l'élément sur lequel on a cliqué est l'élément .details
-    if (event.target == details) {
-      details.style.display = "none";
+  // Ajout d'un gestionnaire d'événements pour le clic en dehors des détails
+  document.addEventListener('click', (event) => {
+    // Vérifier si l'élément sur lequel on a cliqué n'est pas à l'intérieur des détails
+    if (!event.target.closest('.details')) {
+      // Cacher tous les détails
+      enSavoirPlusBtns.forEach(enSavoirPlusBtn => {
+        const details = enSavoirPlusBtn.parentElement.querySelector('.details');
+        details.style.display = 'none';
+      });
     }
   });
-
 });
