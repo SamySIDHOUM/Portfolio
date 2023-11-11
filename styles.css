@@ -124,13 +124,15 @@ nav a:hover {
     background-color: rgb(248, 248, 248); 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .card {
     width: 90%;
     margin: 5%;
     text-align: center;
-    position: relative; 
+    position: relative;
+    overflow: hidden; 
 }
 .card img {
     width: 100%;
@@ -190,6 +192,24 @@ nav a:hover {
 
 .details a:hover {
     text-decoration: underline; 
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    border: none;
+    color: rgb(85, 85, 85);
+    background-color: transparent;
+    font-size: 40px;
+    cursor: pointer;
+}
+  
+#prev-btn {
+    left: 1%; 
+}
+
+#next-btn {
+    right: 1%; 
 }
 
 /* Footer */
