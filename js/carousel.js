@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cards = Array.from(carouselContainer.querySelectorAll('.card'));
   const nextBtn = document.getElementById('next-btn');
   const prevBtn = document.getElementById('prev-btn');
+  const totalSpan = document.querySelector('.total');
 
   // Initialisation de l'index actuel à 0
   let currentIndex = 0;
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     card.style.display = index === currentIndex ? 'block' : 'none';
   });
 
+  updateTotalSpan();
 
   // Ajout des écouteurs d'événements pour les boutons 
   nextBtn.addEventListener('click', showNextImage);
@@ -22,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleCardDisplay(currentIndex, 'none');
     currentIndex = getNextIndex(currentIndex);
     toggleCardDisplay(currentIndex, 'block');
+    updateTotalSpan();
   }
 
   // Fonction pour afficher img précédente 
@@ -29,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleCardDisplay(currentIndex, 'none');
     currentIndex = getPrevIndex(currentIndex);
     toggleCardDisplay(currentIndex, 'block');
+    updateTotalSpan();
   }
   // Fonction pour basculer l'affichage d'une carte 
   function toggleCardDisplay(index, displayValue) {
@@ -47,4 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
     return prevIndex < 0 ? cards.length - 1 : prevIndex;
   }
 
+  // Fonction pour mettre à jour le contenu total
+  function updateTotalSpan() {
+    totalSpan.textContent = (currentIndex + 1) + ' / ' + cards.length;
+  }  
 });
