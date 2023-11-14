@@ -152,10 +152,6 @@ nav a:hover {
 }
 
 .en-savoir-plus-btn .btn-text {
-    display: none;
-}
-
-.en-savoir-plus-btn:hover .btn-text {
     display: inline;
 }
 
@@ -270,6 +266,11 @@ nav a:hover {
     background-color: #45a049;
 }
 
+.error-message {
+    color: #ff5555;
+    font-size: 14px;
+}
+
 /* Footer */
 footer {
     width: 100%;
@@ -291,14 +292,19 @@ footer {
     margin: 0 15px;
 }
 
-.fab {
+.fab,
+.fa-brands {
     color: black; 
     font-size: 25px;
 }
 
 .fab:hover {
     color: grey; 
-    }
+}
+
+.fa-brands:hover {
+    color: grey; 
+}
 
 #copyright_txt {
     display: block;
