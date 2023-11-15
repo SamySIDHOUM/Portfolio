@@ -176,8 +176,9 @@ nav a:hover {
 }
 
 .details p {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     color: rgb(85, 85, 85);
+    font-size: 14px;
 }
 
 .details a {
@@ -292,18 +293,13 @@ footer {
     margin: 0 15px;
 }
 
-.fab,
-.fa-brands {
+#social a {
     color: black; 
     font-size: 25px;
 }
 
-.fab:hover {
-    color: grey; 
-}
-
-.fa-brands:hover {
-    color: grey; 
+#social a:hover {
+    color: gray;
 }
 
 #copyright_txt {
