@@ -3,6 +3,11 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 /* Header */
 header {
     width: 100%;
@@ -19,8 +24,6 @@ header {
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
     display: flex;
     gap: 18px;
 }
@@ -46,6 +49,7 @@ nav a:hover {
     align-items: center;
     box-sizing: border-box;
     min-height: fit-content;
+    margin-bottom: 5%;
 }
 
 #profile img {
@@ -92,7 +96,7 @@ nav a:hover {
 /* Section about */
 #about {
     width: 80%;
-    margin: 5%;
+    margin: 0 auto;
     padding: 2%;
     border-radius: 5%;
     background-color: rgb(248, 248, 248); 
@@ -110,11 +114,97 @@ nav a:hover {
     text-align: justify;
     margin: 5%;
 }
-/* Section mes projets */
+/* Section presentation */
+#skills {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5%;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+    margin-top: 2%;
+}
 
+.oc {
+    font-family: "Inter",sans-serif;
+    color: #7451eb;
+}
+  
+.skill {
+    margin-bottom: 2%;
+}
+.progress-section {
+    width: 90%;
+    padding: 2%;
+}
+
+.progress-bar {
+    margin: 2%;
+}
+
+.progress-bar p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+
+.progress-bar span {
+    color: #333;
+}
+
+.progress {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 10px;
+}
+
+.progress::-webkit-progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.html::-webkit-progress-value {
+    background: #e91e63;
+}
+
+.css::-webkit-progress-value {
+    background: #2196f3;
+}
+
+.javascript::-webkit-progress-value {
+    background: #ffc107;
+}
+
+.sass::-webkit-progress-value {
+    background: #ff5722;
+}
+
+.react::-webkit-progress-value {
+    background: #61dafb;
+}
+
+.node::-webkit-progress-value {
+    background: #4caf50;
+}
+
+.express::-webkit-progress-value {
+    background: #ff9800;
+}
+
+.mongoose::-webkit-progress-value {
+    background: #ff5722;
+}
+
+.mongodb::-webkit-progress-value {
+    background: #2196f3;
+} 
+
+/* Section mes projets */
 #projets {
     width: 80%;
-    margin: 5%;
+    margin: 0 auto;
     padding: 2%;
 }
 
@@ -217,6 +307,7 @@ nav a:hover {
     color: rgb(85, 85, 85);
     font-weight: bold;
 }
+
 /* section contact */
 #contact p {
     text-align: center;
@@ -278,14 +369,13 @@ footer {
     text-align: center;
     padding: 10px;
     /* position: fixed; */
+    margin-top: 2%;
     bottom: 0;
 }
 
 #social ul {
     display: flex;
     justify-content: center;
-    list-style: none;
-    padding: 0;
     margin-top: 3%;
 }
 
