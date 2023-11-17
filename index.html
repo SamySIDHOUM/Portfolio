@@ -13,8 +13,16 @@
 
 <header>
     <h1 class="logo">Samy SIDHOUM</h1>
-    <nav>
+    <nav class="menu-desktop">
         <ul>
+            <li><a href="#about" aria-label="Aller à la section À propos">À propos</a></li>
+            <li><a href="#projets" aria-label="Aller à la section mes projets">Projets</a></li>
+            <li><a href="#contact" aria-label="Aller à la section contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="menu-mobile" id="menu-mobile">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <ul id="mobile-nav">
             <li><a href="#about" aria-label="Aller à la section À propos">À propos</a></li>
             <li><a href="#projets" aria-label="Aller à la section mes projets">Projets</a></li>
             <li><a href="#contact" aria-label="Aller à la section contact">Contact</a></li>
@@ -215,6 +223,8 @@
 <script type="module" src="./js/details.js" defer></script>
 <script type="module" src="./js/carousel.js" defer></script>
 <script type="module" src="./js/form.js" defer></script>
+<script type="module" src="./js/menu-mobile.js" defer></script>
+
 
 </body>
 </html>
