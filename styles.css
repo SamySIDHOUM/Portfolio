@@ -234,8 +234,8 @@ nav ul {
 .en-savoir-plus-btn {
     position: absolute; 
     top: 75%; 
-    left: 25%; 
-    transform: translate(-80%, -20%); 
+    left: 73%; 
+    transform: translate(-20%, -20%); 
     background-color: #3498db;
     color: #fff;
     padding: 10px 20px;
@@ -370,7 +370,6 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px;
-    /* position: fixed; */
     margin-top: 2%;
     bottom: 0;
 }
@@ -418,7 +417,17 @@ footer {
         padding: 10px 15px;
         font-size: small;
     }
-
+    /* Section mes projets */
+    .details {
+        max-height: 70%; 
+        overflow-y: auto; 
+    }
+    #prev-btn {
+        left: 0; 
+    }
+    #next-btn {
+        right: 0; 
+    }
 }
   /*mobile*/
 @media screen and (max-width:767px){
@@ -468,5 +477,76 @@ footer {
     .btn {
         padding: 10px 10px;
         font-size: x-small;
+    }
+    /* Section about */
+    #skills p {
+        font-size: small;
+    }
+    .section-title {
+        font-size: 30px;
+    }
+    #about p {
+        font-size: small;
+    }
+    .progress-bar p {
+        font-size: small;
+    }
+    .progress-bar span {
+        font-size: small;
+    }
+    /* Section mes projets */
+    .en-savoir-plus-btn {
+        font-size: smaller;
+        top: 67%; 
+        left: 53%; 
+        transform: translate(-10%, -30%); 
+        padding: 5px 10px;
+    }
+    .en-savoir-plus-btn i {
+        margin: 0;
+    }
+    .btn-text {
+        font-size: smaller;
+    }
+    .details {
+        max-height: 70%; 
+        overflow-y: auto; 
+    }
+    .details h3 {
+        font-size: smaller;
+    }
+    .details p {
+        font-size: smaller;
+    }
+    .details a {
+        font-size: smaller;
+    }
+    .carousel-btn {
+        font-size: smaller;
+    }
+    #prev-btn {
+        left: 0; 
+    }
+    #next-btn {
+        right: 0; 
+    }
+    .total {
+        font-size: smaller;
+    }
+
+    /* section contact */
+    #contact p {
+        font-size: small;
+    }
+    .form-contact input,
+    .form-contact textarea {
+        font-size: small;
+    }
+    .form-contact input[type="submit"] {
+        font-size: small;
+    }
+    /* Footer */
+    #copyright_txt {
+        font-size: smaller;
     }
 }
