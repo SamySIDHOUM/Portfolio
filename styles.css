@@ -496,17 +496,20 @@ footer {
     }
     /* Section mes projets */
     .en-savoir-plus-btn {
-        font-size: smaller;
-        top: 67%; 
-        left: 53%; 
+        font-size: smaller; 
+        top: 75%; 
+        left: 75%; 
         transform: translate(-10%, -30%); 
         padding: 5px 10px;
     }
     .en-savoir-plus-btn i {
         margin: 0;
     }
-    .btn-text {
-        font-size: smaller;
+    .en-savoir-plus-btn .btn-text {
+        display: none;
+    }
+    .en-savoir-plus-btn i {
+        display: block;
     }
     .details {
         max-height: 70%; 
@@ -537,6 +540,8 @@ footer {
     /* section contact */
     #contact p {
         font-size: small;
+        width: 60%;
+        margin: 1% auto;
     }
     .form-contact input,
     .form-contact textarea {
